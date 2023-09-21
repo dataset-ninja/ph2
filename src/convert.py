@@ -1,9 +1,9 @@
 import supervisely as sly
-import os
+import os, glob
 from dataset_tools.convert import unpack_if_archive
 import src.settings as s
 from urllib.parse import unquote, urlparse
-from supervisely.io.fs import get_file_name, get_file_size
+from supervisely.io.fs import get_file_name, get_file_name_with_ext
 import shutil
 
 from tqdm import tqdm
@@ -153,14 +153,14 @@ def convert_and_upload_supervisely_project(
 
     obj_class = sly.ObjClass("lesion", sly.Bitmap)
 
-    histological_diagnosis = sly.TagMeta("histological diagnosis", sly.TagValueType.ANY_STRING)
-    clinical_diagnosis = sly.TagMeta("clinical diagnosis", sly.TagValueType.ANY_STRING)
+    histological_diagnosis = sly.TagMeta("histological_diagnosis", sly.TagValueType.ANY_STRING)
+    clinical_diagnosis = sly.TagMeta("clinical_diagnosis", sly.TagValueType.ANY_STRING)
     asymmetry = sly.TagMeta("asymmetry", sly.TagValueType.ANY_STRING)
-    pigment_network = sly.TagMeta("pigment network", sly.TagValueType.ANY_STRING)
-    dots = sly.TagMeta("Dots/Globules", sly.TagValueType.ANY_STRING)
-    streaks = sly.TagMeta("Streaks", sly.TagValueType.ANY_STRING)
-    regression_areas = sly.TagMeta("regression areas", sly.TagValueType.ANY_STRING)
-    veil = sly.TagMeta("blue-whitish veil", sly.TagValueType.ANY_STRING)
+    pigment_network = sly.TagMeta("pigment_network", sly.TagValueType.ANY_STRING)
+    dots = sly.TagMeta("dots/globules", sly.TagValueType.ANY_STRING)
+    streaks = sly.TagMeta("streaks", sly.TagValueType.ANY_STRING)
+    regression_areas = sly.TagMeta("regression_areas", sly.TagValueType.ANY_STRING)
+    veil = sly.TagMeta("blue-whitish_veil", sly.TagValueType.ANY_STRING)
     legends_colors = sly.TagMeta("colors", sly.TagValueType.ANY_STRING)
 
 
@@ -212,5 +212,3 @@ def convert_and_upload_supervisely_project(
         progress.iters_done_report(len(img_names_batch))
 
     return project
-
-

@@ -1,6 +1,8 @@
 .DS_Store
 __pycache__
 .venv/
+venv/
+PH2Dataset/
 tmp/
 APP_DATA/
 dataset_tools/

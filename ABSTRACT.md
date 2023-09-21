@@ -6,30 +6,108 @@ This image database contains a total of 200 dermoscopic images of melanocytic le
 
 The assessment of each parameter was performed by an expert dermatologist, according to the following parameters:
 
-| Criterion           | PH² Segmentation                                                       |
-|---------------------|------------------------------------------------------------------------|
-| Clinical Diagnosis  | 0 - Common Nevus                                                       |
-|                     | 1 - Atypical Nevus                                                     |
-|                     | 2 - Melanoma                                                           |
-| Lesion Segmentation | Available as a binary mask (with the same size of the original image). |
-| Color Segmentation  | Available as a binary mask (If available).                             |
-| Asymmetry           | 0 - Fully Symmetry                                                     |
-|                     | 1 - Asymmetry in One Axis                                              |
-|                     | 2 - Fully Asymmetry                                                    |
-| Pigment Network     | AT - Atypical                                                          |
-|                     | T - Typical                                                            |
-| Dots/Globules       | A - Absent                                                             |
-|                     | AT - Atypical                                                          |
-|                     | T - Typical                                                            |
-| Streaks             | A - Absent                                                             |
-|                     | P - Present                                                            |
-| Regression Areas    | A - Absent                                                             |
-|                     | P - Present                                                            |
-| Blue Whitish Veil   | A - Absent                                                             |
-|                     | P - Present                                                            |
-| Colors              | 1 - White                                                              |
-|                     | 2 - Red                                                                |
-|                     | 3 - Light-Brown                                                        |
-|                     | 4 - Dark-Brown                                                         |
-|                     | 5 - Blue-Gray                                                          |
-|                     | 6 - Black                                                              |
+<div>
+  <table border="1" bordercolor="#CCCCCC" cellpadding="2" style="margin-top:15px; margin-bottom:5px; font-size:10px">
+    <tbody>
+      <tr align="center" bgcolor="#CCCCCC">
+        <td><strong>Criterion</strong></td>
+        <td><strong>PH² Segmentation</strong></td>
+      </tr>
+
+  <tr>
+    <td rowspan="3"><strong>Clinical Diagnosis</td>
+    <td>0 - Common Nevus</td>
+  </tr>
+  <tr>
+    <td>1 - Atypical Nevus</td>
+  </tr>
+  <tr>
+    <td>2 - Melanoma</td>
+  </tr
+
+  <tr>
+    <td rowspan="1"><strong>Lesion Segmentation</td>
+    <td>Available as a binary mask (with the samsize of the original image).</td>
+  </tr
+
+  <tr>
+    <td rowspan="1"><strong>Color Segmentation</td>
+    <td>Available as a binary mask (with the samsize of the original image) (If available).</td>
+  </tr
+
+  <tr>
+    <td rowspan="3"><strong>Asymmetry</strong></td>
+    <td>0 - Fully Symmetry</td>
+  </tr>
+  <tr>
+    <td>1 – Asymmetry in One Axis</td>
+  </tr>
+  <tr>
+    <td>2 - Fully Asymmetry</td>
+  </tr
+
+  <tr>
+    <td rowspan="2"><strong>Pigment Networkstrong</td>
+    <td>AT - Atypical</td>
+  </tr>
+  <tr>
+    <td>T - Typical</td>
+  </tr
+
+  <tr>
+    <td rowspan="3"><strong>Dots/Globules</strong>
+    <td>A - Absent</td>
+  </tr>
+  <tr>
+    <td>AT - Atypical</td>
+  </tr>
+  <tr>
+    <td>T - Typical</td>
+  </tr
+  
+  <tr>
+    <td rowspan="2"><strong>Streaks</strong></td>
+    <td>A - Absent</td>
+  </tr>
+  <tr>
+    <td>P - Present</td>
+  </tr
+
+  <tr>
+    <td rowspan="2"><strong>Regression Areasstrong</td>
+    <td>A - Absent</td>
+  </tr>
+  <tr>
+    <td>P - Present</td>
+  </tr
+
+  <tr>
+    <td rowspan="2"><strong>Blue Whitish Veilstrong</td>
+    <td>A - Absent</td>
+  </tr>
+  <tr>
+    <td>P - Present</td>
+  </tr
+
+  <tr>
+    <td rowspan="6"><strong>Colors</strong></td>
+    <td>1 - White</td>
+  </tr>
+  <tr>
+    <td>2 - Red</td>
+  </tr>
+  <tr>
+    <td>3 - Light-Brown</td>
+  </tr>
+  <tr>
+    <td>4 - Dark-Brown</td>
+  </tr>
+  <tr>
+    <td>5 - Blue-Gray</td>
+  </tr>
+  <tr>
+    <td>6 - Black</td>
+  </tr>
+    </tbody>
+  </table>
+</div>
