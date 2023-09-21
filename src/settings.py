@@ -45,7 +45,9 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/ph2"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://www.fc.up.pt/addi/ph2%20database.html"
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = [
+    "https://www.fc.up.pt/addi/ph2%20database.html"
+]
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
