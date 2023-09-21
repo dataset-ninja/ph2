@@ -20,9 +20,11 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.Custom(url="https://www.fc.up.pt/addi/ph2%20database.html",redistributable=False)
+LICENSE: License = License.Custom(
+    url="https://www.fc.up.pt/addi/ph2%20database.html", redistributable=False
+)
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
-CATEGORY: Category = Category.Medical()
+CATEGORY: Category = Category.Medical(sensitive_content=True)
 
 CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [CVTask.SemanticSegmentation()]
@@ -34,7 +36,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://www.fc.up.pt/addi/ph2%20database.html"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 4672824
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/ph2"
@@ -56,13 +58,28 @@ BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = ["Teresa Mendonça", "Pedro M. Ferreira", "Jorge Marques", "Andre R. S. Marcal", "Jorge Rozeira"]
+AUTHORS: Optional[List[str]] = [
+    "Teresa Mendonça",
+    "Pedro M. Ferreira",
+    "Jorge Marques",
+    "Andre R. S. Marcal",
+    "Jorge Rozeira",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["Universidade do Porto", "Instituto Superior Técnico Lisboa", "The Dermatology Service of Hospital Pedro Hispano"]
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.up.pt/portal/en/","https://tecnico.ulisboa.pt/pt/",]
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "Universidade do Porto",
+    "Instituto Superior Técnico Lisboa",
+    "The Dermatology Service of Hospital Pedro Hispano",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.up.pt/portal/en/",
+    "https://tecnico.ulisboa.pt/pt/",
+]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also Dataset includes ***histological_diagnosis***, ***clinical_diagnosis***, ***asymmetry***, ***pigment_network***, ***dots/globules***, ***streaks***, ***regression_areas***,***blue-whitish_veil*** and ***colors*** tags"}
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__POSTTEXT__": "Also Dataset includes ***histological_diagnosis***, ***clinical_diagnosis***, ***asymmetry***, ***pigment_network***, ***dots/globules***, ***streaks***, ***regression_areas***,***blue-whitish_veil*** and ***colors*** tags"
+}
 TAGS: Optional[List[str]] = None
 
 
