@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "PH²"
-PROJECT_NAME_FULL: str = "PH² - A dermoscopic image database for research and benchmarking"
+PROJECT_NAME_FULL: str = "PH²: A Dermoscopic Image Database for Research and Benchmarking"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -55,7 +55,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://ieeexplore.ieee.org/abstract/document/6610779"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
