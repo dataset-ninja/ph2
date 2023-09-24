@@ -150,8 +150,4 @@ The melanocytic lesions can be divided in two maingroups concerning their nature
 
 ## Dermoscopic criteria
 
-The set of dermoscopic features that is available in the PH2database corresponds to those features that the dematologistsof Hospital Pedro Hispano consider more relevant to performa clinical diagnosis. This set of features includes the majorityof the dermoscopic features that have to be assessed in themost widely used medical diagnosis procedures, such as theABCD rule, the 7-point checklist and the Menzies method.
-
-### Asymmetry
-
-The asymmetry is one of the most important features fordiagnosing a melanocytic lesion. For instance, it is the largestweight factor in the ABCD rule of dermoscopy.In this database, the lesion asymmetry was evaluated bythe clinician according to the ABCD rule. Therefore, theasymmetry of a lesion is assessed regarding its contour,colors, and structures distribution simultaneously. Moreover,there are three possible labels for this parameter: 0 for fullysymmetric lesions; 1 for asymmetric lesions with respect toone axis; and 2 for asymmetric lesions with respect to twoaxes.
+The set of dermoscopic features that is available in the PH2database corresponds to those features that the dematologistsof Hospital Pedro Hispano consider more relevant to performa clinical diagnosis. 
