@@ -126,7 +126,7 @@ This image database contains a total of 200 dermoscopicimages, containing 80 com
 - Clinical and histological (when available) diagnosis
 - Dermoscopic criteria (Asymmetry; Colors; Pigment net-work; Dots/Globules; Streaks; Regression areas; Blue-whitish veil)
 
-![Fig. 1: An illustrative collection of images from PH2database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)][https://i.ibb.co/bv9QBkt/2023-09-24-150038.png]
+![Fig. 1: An illustrative collection of images from PH2database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)](https://i.ibb.co/bv9QBkt/2023-09-24-150038.png)
 
 <i>Fig. 1: An illustrative collection of images from PH2database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)</i>
 
