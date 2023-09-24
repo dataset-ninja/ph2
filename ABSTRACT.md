@@ -111,3 +111,47 @@ The assessment of each parameter was performed by an expert dermatologist, accor
     </tbody>
   </table>
 </div>
+
+The rather small number of melanomas,compared with the other two types of melanocytic lesions,can be explained by two main reasons. First of all, thenumber of real cases of melanomas is actually much smallerthan the other ones. In addition, as melanomas are usuallynot completely inserted in the image frame and present manyimage artifacts, they are not always suitable to be used asground truth in the evaluation of CAD systems.
+
+For each image in the database, the manual segmentationand the clinical diagnosis of the skin lesion as well as theidentiﬁcation of other important dermoscopic criteria areavailable. These dermoscopic criteria include the assessmentof the lesion asymmetry, and also the identiﬁcation of colorsand several differential structures, such as pigment network,dots, globules, streaks, regression areas and blue-whitish veil.The PH² will be made freely available (online) si-multaneously with the EMBC 2013 conference. 
+
+The size of the PH² database (200 images) might seemssmall, particularly when compared with a traditional machinelearning ground truth database, which may have hundreds orthousands of annotated images. However, it is important tohighlight that the annotation of dermoscopic images is notjust a binary issue (benign or malign). The annotation ofeach image requires a large amount of time and effort, sinceseveral dermoscopic features have to be assessed to performthe lesion diagnosis. Moreover, the skin lesion and the colorclasses present in each image have to be manually segmented by expert clinicians.Besides benchmarking of computer vision/machine learn-ing algorithms, a database like PH2can be also used formedical training. For instance, dermatologist trainees can testtheir skills by comparing their own diagnosis and evaluationwith the ground truth available in the PH² database.
+
+The PH² database was built up through a joint researchcollaboration between the Universidade do Porto, T´ecnicoLisboa, and the Dermatology service of Hospital PedroHispano in Matosinhos, Portugal. The dermoscopic imageswere obtained under the same conditions through TuebingerMole Analyzer system using a magniﬁcation of 20×. Theyare 8-bit RGB color images with a resolution of 768 × 560pixels.
+
+This image database contains a total of 200 dermoscopicimages, containing 80 common nevi, 80 atypical nevi, and40 melanomas. All dermoscopic images are either fromthe skin type II or III, according to the [Fitzpatrick skintype classiﬁcation scale](https://www.bioline.org.br/request?dv09029). Therefore, the skin coloursrepresented in the PH2database may vary from white tocream white. As illustrated in Fig.1, the images of thedatabase were carefully selected taking into account theirquality, resolution and dermoscopic features. Every imagewas evaluated by an expert dermatologist with regard to thefollowing parameters:
+
+- Manual segmentation of the skin lesion
+- Clinical and histological (when available) diagnosis
+- Dermoscopic criteria (Asymmetry; Colors; Pigment net-work; Dots/Globules; Streaks; Regression areas; Blue-whitish veil)
+
+![Fig. 1: An illustrative collection of images from PH2database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)][https://i.ibb.co/bv9QBkt/2023-09-24-150038.png]
+
+<i>Fig. 1: An illustrative collection of images from PH2database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)</i>
+
+Dermatologists performed the manual segmentation and an-notation of the images using a customized annotation tool fordermoscopic images, called [DerMAT](https://dl.acm.org/doi/10.1145/2304496.2304501). As an example,Fig.2 shows the manual segmentation and annotation of tworegions of interest using the DerMAT software.
+
+![Fig2](https://i.ibb.co/G5M9KkC/Manual-segmentation-of-three-melanocytic-lesions-common-nevus-left-atypical-nevus.jpg)
+
+<i>Fig. 2: DerMAT interface for the segmentation and labelingof multiple regions of interest.</i>
+
+## Manual segmentation of the skin lesion
+
+The manual segmentation of the skin lesion, performedby expert dermatologists, is an essential information for theevaluation of the segmentation step of a CAD system.In this database, the manual segmentation of each imageis available as a binary mask, in which pixels with intensityvalue of 1 correspond to the segmented lesion, while pixelswith value 0 correspond to the background. This binary maskhas the same size of the original image and, hence, it can beeasily used to extract the boundary coordinates of the lesion.Figure 3 presents examples of three dermoscopic images andthe corresponding ground truth (manual) segmentations.
+
+![Fig3](https://i.ibb.co/CHTd5Jv/Original-image-left-blue-gray-middle-and-dark-brown-region-right.png)
+
+<i>Fig. 3: Manual segmentation of three melanocytic lesions:common nevus (left), atypical nevus (middle) and melanoma(right).</i>
+
+## Clinical diagnosis
+
+The melanocytic lesions can be divided in two maingroups concerning their nature: benign lesions (which in-clude common and atypical nevus) and malignant lesions(or melanomas). Therefore, each image of the database isclassiﬁed into common nevus, atypical nevus, or melanoma(Fig.3). The histological diagnosis is only available for someof the images, since the histological test is just performed forthose lesions considered highly suspicious by dermatologists
+
+## Dermoscopic criteria
+
+The set of dermoscopic features that is available in the PH2database corresponds to those features that the dematologistsof Hospital Pedro Hispano consider more relevant to performa clinical diagnosis. This set of features includes the majorityof the dermoscopic features that have to be assessed in themost widely used medical diagnosis procedures, such as theABCD rule, the 7-point checklist and the Menzies method.
+
+### Asymmetry
+
+The asymmetry is one of the most important features fordiagnosing a melanocytic lesion. For instance, it is the largestweight factor in the ABCD rule of dermoscopy.In this database, the lesion asymmetry was evaluated bythe clinician according to the ABCD rule. Therefore, theasymmetry of a lesion is assessed regarding its contour,colors, and structures distribution simultaneously. Moreover,there are three possible labels for this parameter: 0 for fullysymmetric lesions; 1 for asymmetric lesions with respect toone axis; and 2 for asymmetric lesions with respect to twoaxes.
