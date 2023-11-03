@@ -116,15 +116,15 @@ For each image in the database, the manual segmentation and the clinical diagnos
 
 The size of the PH² database (200 images) might seem small, particularly when compared with a traditional machine learning ground truth database, which may have hundreds of or thousands of annotated images. However, it is important to highlight that the annotation of dermoscopic images is not just a binary issue (benign or malign). The annotation of each image requires a large amount of time and effort since several dermoscopic features have to be assessed to perform the lesion diagnosis. Moreover, the skin lesion and the color classes present in each image have to be manually segmented by expert clinicians. Besides benchmarking computer vision/machine learning algorithms, a database like PH² can be also used for medical training. For instance, dermatologist trainees can test their skills by comparing their own diagnosis and evaluation with the ground truth available in the PH² database.
 
-This image database contains a total of 200 dermoscopic images, containing 80 common nevi, 80 atypical nevi, and 40 melanomas. All dermoscopic images are either from the skin type II or III, according to the [Fitzpatrick skintype classiﬁcation scale](https://www.bioline.org.br/request?dv09029). Therefore, the skin colors represented in the PH²database may vary from white to cream white. As illustrated in Fig.1, the images of the database were carefully selected taking into account their quality, resolution, and dermoscopic features. Every image is evaluated by an expert dermatologist with regard to the following parameters:
+This image database contains a total of 200 dermoscopic images, containing 80 common nevi, 80 atypical nevi, and 40 melanomas. All dermoscopic images are either from the skin type II or III, according to the [Fitzpatrick skintype classiﬁcation scale](https://www.bioline.org.br/request?dv09029). Therefore, the skin colors represented in the PH² database may vary from white to cream white. As illustrated in Fig.1, the images of the database were carefully selected taking into account their quality, resolution, and dermoscopic features. Every image is evaluated by an expert dermatologist with regard to the following parameters:
 
 - Manual segmentation of the skin lesion
 - Clinical and histological (when available) diagnosis
 - Dermoscopic criteria (Asymmetry; Colors; Pigment net-work; Dots/Globules; Streaks; Regression areas; Blue-whitish veil)
 
-![Fig. 1: An illustrative collection of images from PH²database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)](https://i.ibb.co/bv9QBkt/2023-09-24-150038.png)
+![Fig. 1: An illustrative collection of images from PH² database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)](https://i.ibb.co/bv9QBkt/2023-09-24-150038.png)
 
-<span style="font-size: smaller; font-style: italic;">Fig. 1: An illustrative collection of images from PH²database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)</span>
+<span style="font-size: smaller; font-style: italic;">Fig. 1: An illustrative collection of images from PH² database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)</span>
 
 Dermatologists performed the manual segmentation and annotation of the images using a customized annotation tool for dermoscopic images, called [DerMAT](https://dl.acm.org/doi/10.1145/2304496.2304501). As an example, Fig.2 shows the manual segmentation and annotation of two regions of interest using the DerMAT software.
 
