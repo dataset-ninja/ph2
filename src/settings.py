@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "PH²"
-PROJECT_NAME_FULL: str = "PH²: A Dermoscopic Image Database for Research and Benchmarking"
+PROJECT_NAME: str = "PH2"
+PROJECT_NAME_FULL: str = "PH<sup>2</sup>: A Dermoscopic Image Database for Research and Benchmarking"
 HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
@@ -69,6 +69,7 @@ AUTHORS: Optional[List[str]] = [
     "Andre R. S. Marcal",
     "Jorge Rozeira",
 ]
+AUTHORS_CONTACTS: Optional[List[str]] = ["mendo@fc.up.pt", "ferreira.pmmf@fc.up.pt" , "andre.marcal@fc.up.pt", "jsm@isr.ist.utl.pt", "jrozeira@me.com"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
     "Universidade do Porto",
@@ -131,6 +132,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
