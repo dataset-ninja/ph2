@@ -1,8 +1,6 @@
-The increasing incidence of melanoma has recently promoted the development of computer-aided diagnosis systems for the classification of dermoscopic images. The PH² dataset has been developed for research and benchmarking purposes, in order to facilitate comparative studies on both segmentation and classification algorithms of dermoscopic images. **PH²** is a dermoscopic image database acquired at the Dermatology Service of Hospital Pedro Hispano, Matosinhos, Portugal.
+The **PH²** dataset was developed for computer-aided diagnosis systems, specifically for the classification of dermoscopic images of melanoma. Its purpose is to facilitate comparative studies involving segmentation and classification algorithms. This dataset comprises a total of 200 dermoscopic images of melanocytic lesions with a vast amount of metainformation. It includes 80 common nevi, 80 atypical nevi, and 40 melanomas.
 
-The dermoscopic images were obtained at the Dermatology Service of Hospital Pedro Hispano (Matosinhos, Portugal) under the same conditions through Tuebinger Mole Analyzer system using a magnification of 20x. They are 8-bit RGB color images with a resolution of 768x560 pixels.
-
-This image database contains a total of 200 dermoscopic images of melanocytic lesions, including 80 common nevi, 80 atypical nevi, and 40 melanomas. The PH² database includes medical annotation of all the images namely medical segmentation of the lesion, clinical and histological diagnosis and the assessment of several dermoscopic criteria (colors; pigment network; dots/globules; streaks; regression areas; blue-whitish veil).
+Within the PH² database, each image comes with medical annotations. These annotations include the medical segmentation of the *lesion*, clinical and histological diagnoses, and the evaluation of various dermoscopic criteria, such as colors, pigment network, dots/globules, streaks, regression areas, and blue-whitish veil. The dermoscopic images were captured at the Dermatology Service of Hospital Pedro Hispano in Matosinhos, Portugal. These images were consistently acquired under the same conditions using the Tuebinger Mole Analyzer system, with a magnification of 20x. They are 8-bit RGB color images with a resolution of 768x560 pixels.
 
 The assessment of each parameter was performed by an expert dermatologist, according to the following parameters:
 
@@ -112,42 +110,40 @@ The assessment of each parameter was performed by an expert dermatologist, accor
   </table>
 </div>
 
-The rather small number of melanomas,compared with the other two types of melanocytic lesions,can be explained by two main reasons. First of all, thenumber of real cases of melanomas is actually much smallerthan the other ones. In addition, as melanomas are usuallynot completely inserted in the image frame and present manyimage artifacts, they are not always suitable to be used asground truth in the evaluation of CAD systems.
+The rather small number of melanomas, compared with the other two types of melanocytic lesions, can be explained by two main reasons. First of all, the number of real cases of melanomas is actually much smaller than the other ones. In addition, as melanomas are usually not completely inserted in the image frame and present many image artifacts, they are not always suitable to be used as ground truth in the evaluation of CAD systems.
 
-For each image in the database, the manual segmentationand the clinical diagnosis of the skin lesion as well as theidentiﬁcation of other important dermoscopic criteria areavailable. These dermoscopic criteria include the assessmentof the lesion asymmetry, and also the identiﬁcation of colorsand several differential structures, such as pigment network,dots, globules, streaks, regression areas and blue-whitish veil.The PH² will be made freely available (online) si-multaneously with the EMBC 2013 conference. 
+For each image in the database, the manual segmentation and the clinical diagnosis of the skin lesion as well as theidentiﬁcation of other important dermoscopic criteria are available. These dermoscopic criteria include the assessment of the lesion asymmetry, and also the identiﬁcation of colors in several differential structures, such as pigment network, dots, globules, streaks, regression areas, and blue-whitish veil.
 
-The size of the PH² database (200 images) might seemssmall, particularly when compared with a traditional machinelearning ground truth database, which may have hundreds orthousands of annotated images. However, it is important tohighlight that the annotation of dermoscopic images is notjust a binary issue (benign or malign). The annotation ofeach image requires a large amount of time and effort, sinceseveral dermoscopic features have to be assessed to performthe lesion diagnosis. Moreover, the skin lesion and the colorclasses present in each image have to be manually segmented by expert clinicians.Besides benchmarking of computer vision/machine learn-ing algorithms, a database like PH2can be also used formedical training. For instance, dermatologist trainees can testtheir skills by comparing their own diagnosis and evaluationwith the ground truth available in the PH² database.
+The size of the PH² database (200 images) might seem small, particularly when compared with a traditional machine learning ground truth database, which may have hundreds of or thousands of annotated images. However, it is important to highlight that the annotation of dermoscopic images is not just a binary issue (benign or malign). The annotation of each image requires a large amount of time and effort since several dermoscopic features have to be assessed to perform the lesion diagnosis. Moreover, the skin lesion and the color classes present in each image have to be manually segmented by expert clinicians. Besides benchmarking computer vision/machine learning algorithms, a database like PH² can be also used for medical training. For instance, dermatologist trainees can test their skills by comparing their own diagnosis and evaluation with the ground truth available in the PH² database.
 
-The PH² database was built up through a joint researchcollaboration between the Universidade do Porto, T´ecnicoLisboa, and the Dermatology service of Hospital PedroHispano in Matosinhos, Portugal. The dermoscopic imageswere obtained under the same conditions through TuebingerMole Analyzer system using a magniﬁcation of 20×. Theyare 8-bit RGB color images with a resolution of 768 × 560pixels.
-
-This image database contains a total of 200 dermoscopicimages, containing 80 common nevi, 80 atypical nevi, and40 melanomas. All dermoscopic images are either fromthe skin type II or III, according to the [Fitzpatrick skintype classiﬁcation scale](https://www.bioline.org.br/request?dv09029). Therefore, the skin coloursrepresented in the PH2database may vary from white tocream white. As illustrated in Fig.1, the images of thedatabase were carefully selected taking into account theirquality, resolution and dermoscopic features. Every imagewas evaluated by an expert dermatologist with regard to thefollowing parameters:
+This image database contains a total of 200 dermoscopic images, containing 80 common nevi, 80 atypical nevi, and 40 melanomas. All dermoscopic images are either from the skin type II or III, according to the [Fitzpatrick skintype classiﬁcation scale](https://www.bioline.org.br/request?dv09029). Therefore, the skin colors represented in the PH²database may vary from white to cream white. As illustrated in Fig.1, the images of the database were carefully selected taking into account their quality, resolution, and dermoscopic features. Every image is evaluated by an expert dermatologist with regard to the following parameters:
 
 - Manual segmentation of the skin lesion
 - Clinical and histological (when available) diagnosis
 - Dermoscopic criteria (Asymmetry; Colors; Pigment net-work; Dots/Globules; Streaks; Regression areas; Blue-whitish veil)
 
-![Fig. 1: An illustrative collection of images from PH2database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)](https://i.ibb.co/bv9QBkt/2023-09-24-150038.png)
+![Fig. 1: An illustrative collection of images from PH²database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)](https://i.ibb.co/bv9QBkt/2023-09-24-150038.png)
 
-<i>Fig. 1: An illustrative collection of images from PH2database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)</i>
+<span style="font-size: smaller; font-style: italic;">Fig. 1: An illustrative collection of images from PH²database, including common nevi (1st row), atypical nevi(2nd row) and melanomas (3rd row)</span>
 
-Dermatologists performed the manual segmentation and an-notation of the images using a customized annotation tool fordermoscopic images, called [DerMAT](https://dl.acm.org/doi/10.1145/2304496.2304501). As an example,Fig.2 shows the manual segmentation and annotation of tworegions of interest using the DerMAT software.
+Dermatologists performed the manual segmentation and annotation of the images using a customized annotation tool for dermoscopic images, called [DerMAT](https://dl.acm.org/doi/10.1145/2304496.2304501). As an example, Fig.2 shows the manual segmentation and annotation of two regions of interest using the DerMAT software.
 
 ![Fig2](https://i.ibb.co/G5M9KkC/Manual-segmentation-of-three-melanocytic-lesions-common-nevus-left-atypical-nevus.jpg)
 
-<i>Fig. 2: DerMAT interface for the segmentation and labelingof multiple regions of interest.</i>
+<span style="font-size: smaller; font-style: italic;">Fig. 2: DerMAT interface for the segmentation and labeling of multiple regions of interest.</span>
 
 ## Manual segmentation of the skin lesion
 
-The manual segmentation of the skin lesion, performedby expert dermatologists, is an essential information for theevaluation of the segmentation step of a CAD system.In this database, the manual segmentation of each imageis available as a binary mask, in which pixels with intensityvalue of 1 correspond to the segmented lesion, while pixelswith value 0 correspond to the background. This binary maskhas the same size of the original image and, hence, it can beeasily used to extract the boundary coordinates of the lesion.Figure 3 presents examples of three dermoscopic images andthe corresponding ground truth (manual) segmentations.
+The manual segmentation of the skin lesion, performed by expert dermatologists, is essential information for the evaluation of the segmentation step of a CAD system. In this database, the manual segmentation of each image is available as a binary mask, in which pixels with an intensity value of 1 correspond to the segmented lesion, while pixels with a value of 0 correspond to the background. This binary mask has the same size as the original image and, hence, it can be easily used to extract the boundary coordinates of the lesion. Figure 3 presents examples of three dermoscopic images and the corresponding ground truth (manual) segmentations.
 
 ![Fig3](https://i.ibb.co/CHTd5Jv/Original-image-left-blue-gray-middle-and-dark-brown-region-right.png)
 
-<i>Fig. 3: Manual segmentation of three melanocytic lesions:common nevus (left), atypical nevus (middle) and melanoma(right).</i>
+<span style="font-size: smaller; font-style: italic;">Fig. 3: Manual segmentation of three melanocytic lesions: common nevus (left), atypical nevus (middle), and melanoma(right).</span>
 
 ## Clinical diagnosis
 
-The melanocytic lesions can be divided in two maingroups concerning their nature: benign lesions (which in-clude common and atypical nevus) and malignant lesions(or melanomas). Therefore, each image of the database isclassiﬁed into common nevus, atypical nevus, or melanoma(Fig.3). The histological diagnosis is only available for someof the images, since the histological test is just performed forthose lesions considered highly suspicious by dermatologists
+The melanocytic lesions can be divided into two main groups concerning their nature: benign lesions (which include common and atypical nevus) and malignant lesions(or melanomas). Therefore, each image of the database isclassiﬁed into common nevus, atypical nevus, or melanoma (Fig.3). The histological diagnosis is only available for some of the images since the histological test is performed for those lesions considered highly suspicious by dermatologists.
 
 ## Dermoscopic criteria
 
-The set of dermoscopic features that is available in the PH2database corresponds to those features that the dematologistsof Hospital Pedro Hispano consider more relevant to performa clinical diagnosis. 
+The set of dermoscopic features that is available in the PH² database corresponds to those features that the dermatologist of Hospital Pedro Hispano considers more relevant to performing a clinical diagnosis. 
