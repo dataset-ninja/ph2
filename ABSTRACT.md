@@ -7,7 +7,7 @@ This image database contains a total of 200 dermoscopic images of melanocytic le
 The assessment of each parameter was performed by an expert dermatologist, according to the following parameters:
 
 <div>
-  <table border="1" bordercolor="#CCCCCC" cellpadding="2" style="margin-top:15px; margin-bottom:5px; font-size:10px">
+  <table border="1" bordercolor="#CCCCCC" cellpadding="2" style="margin-top:15px; margin-bottom:5px;">
     <tbody>
       <tr align="center" bgcolor="#CCCCCC">
         <td><strong>Criterion</strong></td>
